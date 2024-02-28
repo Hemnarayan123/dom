@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fruit Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body style="margin: 0">
+
+    <nav class="nav" >
+        <h1 id="heading">Fruit Shop </h1>
+        <div>
+          <input class="search-box" type="text" placeholder="search here....">
+          <button id="btn"  type="submit"> Search</button>
+        </div>
+       
+    </nav>
+
+
+    <form id="addFruitForm">
+      <h2 id="basket-heading">Add Fruits</h2>
+      <input
+        type="text"
+        name="fruit"
+        id="fruit-to-add"
+        placeholder="Enter fruit name"
+      />
+
+      <button type="submit">Add</button>
+    </form>
+
+
+    <ul class="fruits">
+
+      <li class="fruit">
+        Banana<button class="delete-btn">x</button>
+        <button class="edit-btn">Edit</button>
+      </li>
+
+      <li class="fruit">
+        Apple<button class="delete-btn">x</button>
+        <button class="edit-btn">Edit</button>
+      </li>
+
+      <li class="fruit">
+        Orange<button class="delete-btn">x</button>
+        <button class="edit-btn">Edit</button>
+      </li>
+
+      <li class="fruit">
+        Kiwi<button class="delete-btn">x</button>
+        <button class="edit-btn">Edit</button>
+      </li>
+
+    </ul>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>

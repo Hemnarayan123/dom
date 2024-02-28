@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Element Between Existing Elements</title>
+</head>
+<body>
+
+  <div id="existingElement1">
+    <p>This is the first existing element.</p>
+  </div>
+
+  <div id="existingElement2">
+    <p>This is the second existing element.</p>
+  </div>
+
+  <script>
+    // Get references to the existing elements
+    var existingElement1 = document.getElementById("existingElement1");
+    var existingElement2 = document.getElementById("existingElement2");
+
+    // Create a new element using insertAdjacentHTML between the existing elements
+    existingElement1.insertAdjacentHTML('afterend', '<div id="newElement"><p>This is the dynamically created element.</p></div>');
+  </script>
+
+</body>
+</html>

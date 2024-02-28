@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>createElement</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <p id="existingParagraph1">This is the first existing paragraph.</p>
+  
+  <p id="existingParagraph2">This is the second existing paragraph.</p>
+
+  <script>
+    // Create new paragraph element
+    var newParagraph = document.createElement("p");
+    newParagraph.textContent = "This is a new paragraph.";
+
+    // Get references to existing paragraphs
+    var existingParagraph1 = document.getElementById("existingParagraph1");
+    var existingParagraph2 = document.getElementById("existingParagraph2");
+
+    // Get parent element
+    var parentElement = existingParagraph1.parentNode;
+
+    // Insert the new paragraph between existing paragraphs
+    parentElement.insertBefore(newParagraph, existingParagraph2);
+  </script>
+
+</body>
+
+</html>

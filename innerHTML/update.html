@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>innerHTML Example</title>
+</head>
+<body>
+
+  <div id="exampleDiv">
+    <p>This is some initial content.</p>
+  </div>
+
+  <script>
+    // Get the element with the id "exampleDiv"
+    var exampleElement = document.getElementById("exampleDiv");
+
+    // Get the current HTML content inside the div
+    var currentContent = exampleElement.innerHTML;
+    console.log("Current Content:", currentContent);
+
+    // Set new HTML content using innerHTML (replacing the existing content)
+    exampleElement.innerHTML = "<p>This is the updated content!</p>";
+
+    // Get the updated HTML content
+    var updatedContent = exampleElement.innerHTML;
+    console.log("Updated Content:", updatedContent);
+  </script>
+
+</body>
+</html>

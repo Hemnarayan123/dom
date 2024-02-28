@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">This is Header </h1>
+
+
+    <h1 id="down"> This is Footer </h1>
+  
+
+    <script>
+   
+   newH= document.createElement('h1')
+   newH.textContent= 'This is center h1'
+
+   head=document.getElementById('down')
+   parent = head.parentNode
+   parent.insertBefore(newH, head)
+
+
+
+
+    </script>
+    
+</body>
+</html>
